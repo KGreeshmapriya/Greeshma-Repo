@@ -32,7 +32,7 @@ A web-based personal assistant dashboard built with **Flask**. This project inte
   - Toggle between light and dark themes with smooth transitions.
 
 ---
-
+```
 ## Project Structure
 project-root/
 ├─ app.py                  # Main Flask application
@@ -56,7 +56,7 @@ project-root/
 │   ├─ expenses.html
 │   └─ calendar.html
 └─ README.md
-
+```
 
 ## How to Use
 
