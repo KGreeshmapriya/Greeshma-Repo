@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Welcome to Your Dashboard</h1>
+
+<div class="cards">
+    <div class="weather-card">
+    <h2>🌤 Weather</h2>
+    <p>Location: {{ weather.location }}</p>
+    <p>Temperature: {{ weather.temp }}°C</p>
+    <p>Condition: {{ weather.description }}</p>
+    <p>Humidity: {{ weather.humidity }}%</p>
+</div>
+
+    <div class="Quote-Card">
+        <h3>Quote</h3>
+        <p>{{ quote }}</p>
+    </div>
+</div>
+
+<h2>Latest News</h2>
+<div class="news-slider">
+    {% for item in news %}
+    <div class="news-card">
+        {% if item.image %}<img src="{{ item.image }}" alt="News Image">{% endif %}
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description[:80] }}...</p>
+        <a href="{{ item.url }}" target="_blank">Read More</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
