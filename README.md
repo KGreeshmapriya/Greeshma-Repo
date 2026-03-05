@@ -26,28 +26,27 @@ Responsive design with animations and hover effects
 
 Folder Layout
 project-root/
-│
-├─ app.py                  # Main Flask application
-├─ database/
-│   └─ data.db             # SQLite database
-├─ modules/
-│   ├─ weather.py           # Fetch weather data
-│   ├─ news.py              # Fetch news data
-│   └─ quotes.py            # Fetch motivational quotes
-├─ static/
-│   └─ css/
-│       ├─ style.css        # Dashboard styling
-│       └─ login.css        # Login/Register styling
-├─ templates/
-│   ├─ base.html            # Dashboard layout
-│   ├─ base_login.html      # Login/Register layout
-│   ├─ login.html
-│   ├─ register.html
-│   ├─ home.html
-│   ├─ diary.html
-│   ├─ expenses.html
-│   └─ calendar.html
-└─ README.md
+  app.py                  # Main Flask application
+  database/
+    data.db               # SQLite database
+  modules/
+    weather.py            # Fetch weather data
+    news.py               # Fetch news data
+    quotes.py             # Fetch motivational quotes
+  static/
+    css/
+      style.css           # Dashboard styling
+      login.css           # Login/Register styling
+  templates/
+    base.html             # Dashboard layout
+    base_login.html       # Login/Register layout
+    login.html
+    register.html
+    home.html
+    diary.html
+    expenses.html
+    calendar.html
+  README.md
 How to Use
 
 Register a new account or log in with an existing one.
